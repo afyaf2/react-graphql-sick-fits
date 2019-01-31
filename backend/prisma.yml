@@ -3,4 +3,4 @@ datamodel: datamodel.prisma
 # secret: ${env:SECRET}
 hooks:
   post-deploy:
-    - graphql get-schema -p prisma
+    - node_modules/.bin/graphql get-schema -p prisma
